@@ -2,7 +2,7 @@ source("elements.r", local = TRUE)
 
 shinyUI(basicPage(
   headerPanel.2(
-    "Which Blogger Are You? v0.9", 
+    "Which Blogger Are You? v1.0", 
     tags$head(
       tags$script(src = 'js/highcharts.js'),
       tags$script(src = 'js/highcharts-more.js'),
