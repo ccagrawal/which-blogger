@@ -39,12 +39,23 @@ $(document).ready(function() {
         dataLabels: {
           enabled: true,
           format: '{point.y:.3f}',
+        },
+        cursor: 'pointer',
+        point: {
+          events: {
+            click: function() {
+              x = this;
+              var someURL = this.series.userOptions.URLs[this.x]
+              window.open('http://' + someURL);
+            }
+          }
         }
       }
     },
     series: [{
       name: 'Probability',
       type: 'column',
+      URLs: ['ccagrawal.wordpress.com/', 'optimumbalance.wordpress.com/', 'w0rdswordswords.wordpress.com/', 'onemanroundtable.wordpress.com', 'anujshah93.wordpress.com', 'theempirebusiness.wordpress.com', 'reenacted.wordpress.com', 'wuchiwritings.wordpress.com', 'ankitshah21.wordpress.com', 'naomitalks.wordpress.com'],
       data: [.1, .1, .1, .1, .1, .1, .1, .1, .1, .1],
       tooltip: {
         pointFormat: '{point.y:.3f}',

@@ -28,13 +28,13 @@ shinyUI(basicPage(
     tags$div(id="resultsChart", align="center"),
     tags$script(src = "initchart.js"),
     
-#     tags$p("I created this web-app after", 
-#            tags$a(href = "http://statcheck.wordpress.com/2013/05/30/monte-carlo-tennis/", "blogging"),
-#            "about the subject. View the",
-#            tags$a(href = "https://github.com/ccagrawal/tennis-sim", "source code"),
-#            "on GitHub."),
-
     tags$br(),
+    tags$p("I created this web-app after", 
+           tags$a(href = "http://ccagrawal.wordpress.com/2013/08/11/which-blogger-are-you/", "blogging"),
+           "about the subject. View the",
+           tags$a(href = "https://github.com/ccagrawal/which-blogger", "source code"),
+           "on GitHub."),
+
     tags$h5(textOutput("count"))
   )
 ))
